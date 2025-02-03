@@ -1,3 +1,10 @@
-title: My GitHub Pages Site
-description: A simple Jekyll site hosted on GitHub Pages
+title: Engineering Manager | Tech Lead
+header_title: "Welcome to My Site"
+footer_title: "Thank you for visiting!"
 theme: minima
+
+
+
+# Add the assets folder to the `include` list to be processed by Jekyll
+include:
+  - assets

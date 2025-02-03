@@ -1,17 +1,275 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to my GitHub Pages site!">
-  <title>My GitHub Pages Site</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-</head>
-<body class="bg-light text-center">
-  <div class="container py-5">
-    <h1 class="display-4">Welcome to My GitHub Pages Site</h1>
-    <p class="lead">This is a simple Jekyll-powered website hosted on GitHub Pages.</p>
-    <a class="btn btn-primary" href="/about.html">Learn More</a>
+---
+layout: default
+title: Home
+---
+
+<!-- <h2>Welcome to My Jekyll Site</h2>
+
+<ul>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul> -->
+
+<div class="resume-container">
+  <header class="header">
+    <div class="contact-info">
+      <ul>
+        <li>Email<a href="mailto:sam.pbarber@outlook.com" target="_blank" rel="noopener noreferrer">:
+            sam.pbarber@outlook.com</a></li>
+        <li>LinkedIn<a href="https://www.linkedin.com/in/sampbarber" target="_blank" rel="noopener noreferrer">:
+            linkedin.com/in/sampbarber</a></li>
+        <li>Stackoverflow<a href="https://stackoverflow.com/users/4422493/sam-barber" target="_blank"
+            rel="noopener noreferrer">: stackoverflow.com/sam-barber</a></li>
+        <li>Based in: Melbourne, Australia</li>
+      </ul>
+    </div>
+    <div class="name-title">
+      <h1>SAM BARBER</h1>
+      <p>TECH LEAD | ENGINEERING MANAGER</p>
+    </div>
+  </header>
+  <section class="skills">
+    <h2 class="section-title">PROFILE</h2>
+    <p class="profile-text">I am a passionate and business focused engineer and manager who is just as at home on the
+      tools as building and leading teams. I understand complex business problems and use software to solve them. I am
+      able to help businesses turn their ideas in to products and effective solutions that are within budget, easy to
+      maintain, and delivered on time. Most of all, I am highly personable and approach everything with a sense of
+      humour.</p>
+    <h2 class="section-title">SKILLS</h2>
+    <div class="responsive-container">
+      <div class="row">
+        <div class="item title">10 - 15 years</div>
+        <ul class="tag-list item">
+          <li>c#</li>
+          <li>cloud</li>
+          <li>.net</li>
+          <li>git</li>
+          <li>azure</li>
+          <li>rest</li>
+          <li>scrum</li>
+          <li>agile</li>
+          <li>TDD</li>
+          <li>javascript</li>
+          <li>html</li>
+          <li>IaaS</li>
+          <li>oauth</li>
+          <li>mssql</li>
+          <li>fitness devices</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="item title">5 - 10 years</div>
+        <ul class="tag-list item">
+          <li>management</li>
+          <li>react</li>
+          <li>react native</li>
+          <li>graphql</li>
+          <li>typescript</li>
+          <li>app distribution</li>
+          <li>nosql</li>
+          <li>cosmosdb</li>
+          <li>ci/cd</li>
+          <li>WCAG</li>
+          <li>azure devops</li>
+          <li>jira</li>
+          <li>microservices</li>
+          <li>azure functions</li>
+          <li>event-driven</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="item title">1 - 5 years</div>
+        <ul class="tag-list item">
+          <li>aws</li>
+          <li>lambda</li>
+          <li>SES</li>
+          <li>SNS</li>
+          <li>aws connect</li>
+          <li>auth0</li>
+          <li>GCP</li>
+          <li>azure ML</li>
+          <li>firebase</li>
+          <li>java</li>
+          <li>node</li>
+          <li>umbraco</li>
+          <li>android</li>
+          <li>ios</li>
+          <li>shopify</li>
+          <li>azure function</li>
+          <li>blazor</li>
+          <li>wordpress</li>
+          <li>SAML2</li>
+        </ul>
+      </div>
+    </div>
+    <h2 class="section-title">KEY CAPABILITIES</h2>
+    <div class="responsive-container">
+      <div class="row">
+        <div class="item-title title">Architecture</div>
+        <div class="item">Over a decade of experience in designing, building, and maintaining scalable and reliable
+          software systems. Experienced in building real-time integrations, reporting systems, and distributed systems
+          using event-driven architectures and microservices.</div>
+      </div>
+      <div class="row">
+        <div class="item-title title">Cloud</div>
+        <div class="item">Demonstrated expertise in Cloud Management across Azure, AWS, and GCP. Experienced in FaaS
+          (Function as a Service), PaaS (Platform as a Service), and IaaS (Infrastructure as a Service) resource
+          allocation, cost optimisation, and ensuring the security and scalability of cloud-based systems. Skilled in
+          leveraging cloud technologies to drive innovation, streamline processes, and achieve business goals.</div>
+      </div>
+      <div class="row">
+        <div class="item-title title">Leadership</div>
+        <div class="item">Proven track record of assembling, managing, and leading high-performance technical teams.
+          Trains and mentors teams focusing on utilizing individual strengths and abilities, and working to align
+          individual, team, and organizational goals. Collaborates closely with team members to create a healthy working
+          environment primed for growth, innovation, and the success of the business, driving organizational change
+          where needed.</div>
+      </div>
+      <div class="row">
+        <div class="item-title title">Business</div>
+        <div class="item">Deep understanding of the impact of software on business and can advise software solutions
+          that help solve complex business problems. Able to assess technical requirements and align them closely to
+          business goals to develop software that is cost-effective, delivered on-time, and easily maintained.</div>
+      </div>
+      <div class="row">
+        <div class="item-title title">Scalability</div>
+        <div class="item">Experienced in delivering scalable and cost-effective software that can easily be extended and
+          maintained. Able to pick the right tools, services, and processes that support future growth.</div>
+      </div>
+    </div>
+  </section>
+  <h2 class="section-title">EMPLOYMENT HISTORY</h2>
+  <div class="employment-history">
+    <div>
+      <p class="employment-history-title">Converge International | Engineering Manager</p>
+      <p class="employment-history-duration">FEB 2022 - PRESENT, MELBOURNE, AUSTRALIA</p>
+      <p class="employment-history-description">I manage the mobile engineering team to deliver an engaging iOS and
+        Android app, built in React Native with a .net backend, that provides EAP services, health ratings, challenges,
+        and highly personalised content with over 50k active users.</p>
+      <ul class="employment-history-bullets">
+        <li>Planning and coordinating a complex migration from Azure to AWS.</li>
+        <li>I led and managed the mobile app engineering team through a complex transition from HeadUp Labs into
+          Converge following its acquisition.</li>
+        <li>I led projects to consolidate and sunset legacy applications, replacing them with new integrations and
+          internal systems.</li>
+        <li>Integration with AWS Connect to provide chat-based support and counselling and Converge backend services to
+          provide online booking functionality.</li>
+        <li>Migration to Auth0 to provide authentication services.</li>
+        <li>Driving the technology roadmap to highlight improvements and necessary updates to security and processes
+          while driving down cost and technical debt.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="employment-history-title">Headup Labs | Engineering Manager</p>
+      <p class="employment-history-duration">FEB 2020 - FEB 2022, MELBOURNE, AUSTRALIA</p>
+      <p class="employment-history-description"></p>
+      <ul class="employment-history-bullets">
+        <li>I managed all customisations and technical client requirements for all 7 white label apps that HeadUp
+          created. This allowed the company to monetise and was worth $4 million AUD in contracts, it then led to it’s
+          later acquisition.</li>
+        <li>I was the technical lead for HeadUp Labs during it’s acquisition by Converge and responsible for supporting
+          the due diligence, by the prospective buyer. This was a thorough due diligence process requiring multiple
+          rounds of assessments, meetings, interviews, and technical presentations. The Converge acquisition
+          of HeadUp went ahead in February 2022.&ZeroWidthSpace; My technical presentations were noted as exceptional by
+          all stakeholders.</li>
+        <li>I scoped, designed, and developed a complex white label application for a UK Government pilot scheme, to
+          improve health outcomes in lower socio-economic areas, worth $3 million. This included a complex points system
+          and real time integration with multiple reward platforms. To support the rollout, I developed a fully bespoke
+          admin portal written in Blazor to facilitate a customer service team. It was a huge success.</li>
+        <li>Built and maintained device integration with Fitbit, Garmin, HealthKit, GoogleFit, and custom Bluetooth
+          devices.</li>
+        <li>Led the frontend team in making the mobile WCAG 2.0 AA compliant.</li>
+        <li>Recruited 5 developers, building a long-standing team after a period of high turnover.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="employment-history-title">Subway Digital | Lead Software Engineer</p>
+      <p class="employment-history-duration">MAR 2018 - JULY 2019, VANCOUVER, CANADA</p>
+      <p class="employment-history-description">Developing an enterprise application that received online orders via an
+        API and integrated with other Subway systems such as the POS, Menu Management, Product Applications, as well as
+        third party systems. The APIs were used by the android, iPhone apps and web applications. I was in charge of
+        managing multiple high profile projects from inception to delivery as well as continuation of improvements to
+        all development processes.</p>
+      <ul class="employment-history-bullets">
+        <li>Introduced coding standards, unit testing, and cloud services migration.</li>
+        <li>Led technical development for a team of 7 engineers.</li>
+        <li>Pivotal in recruitment processes and team growth.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="employment-history-title">FCV Interactive | Contract Software Engineer</p>
+      <p class="employment-history-duration">JAN 2018 - MAR 2018, VANCOUVER, CANADA</p>
+      <p class="employment-history-description"></p>
+      <ul class="employment-history-bullets"></ul>
+    </div>
+    <div>
+      <p class="employment-history-title">Virgin Pulse (Formerly GCC) | Software Engineer</p>
+      <p class="employment-history-duration">SEP 2016 - MAY 2017, MELBOURNE, AUSTRALIA</p>
+      <p class="employment-history-description">Heavily involved in the formation of a new team to port “the secret
+        sauce” of our original GCC product into the flagship product of Virgin Pulse. I was required to cross-train to
+        Java, pick up AngularJS and make sure my output and that of my team, met the requirements of our offshore
+        colleagues.</p>
+      <ul class="employment-history-bullets"></ul>
+    </div>
+    <div>
+      <p class="employment-history-title">Global Corporate Challenge (GCC) | Software Engineer</p>
+      <p class="employment-history-duration">MAY 2015 - SEP 2016, MELBOURNE, AUSTRALIA</p>
+      <p class="employment-history-description">Worked on 3 business critical projects after being hired following a
+        contract position. This included designing and implementing a highly complex SSRS based reporting system.
+        Creating a ground breaking psychological well-being module from scratch that received praise from our users and
+        great endorsements from the psychology community. As part of a smaller team I was able to get great experience
+        of the full SDLC (from design to deployments) and work on many cross-departmental projects (marketing, finance,
+        logistics).</p>
+      <ul class="employment-history-bullets"></ul>
+    </div>
+    <div>
+      <p class="employment-history-title">Deepend | Contract .NET Engineer</p>
+      <p class="employment-history-duration">DEC 2014 - JAN 2015, MELBOURNE, AUSTRALIA</p>
+      <p class="employment-history-description"></p>
+      <ul class="employment-history-bullets"></ul>
+    </div>
+    <div>
+      <p class="employment-history-title">Thomsons Online Benefits | Software Engineer</p>
+      <p class="employment-history-duration">FEB 2009 - NOV 2014, LONDON, UK</p>
+      <p class="employment-history-description">Worked as part of a large team (50+ developers) on a highly complex and
+        configurable employee benefits application for over a million active users. I worked on all areas of the
+        application including providing SSO solutions using SAML for some of the companies largest clients including
+        Google, Microsoft, IBM and many more.</p>
+      <ul class="employment-history-bullets"></ul>
+    </div>
   </div>
-</body>
-</html>
+  <div class="grid-container">
+    <div class="personal-info">
+      <h2 class="section-title">PERSONAL</h2>
+      <ul class="tag-list item">
+        <li>guitar</li>
+        <li>piano</li>
+        <li>drums</li>
+        <li>hiking</li>
+        <li>running</li>
+        <li>kitesurfing</li>
+        <li>surfing</li>
+        <li>mountain biking</li>
+        <li>golf</li>
+        <li>squash</li>
+        <li>snowboarding</li>
+        <li>travel</li>
+        <li>DIY</li>
+        <li>gaming</li>
+        <li>gardening</li>
+        <li>cooking</li>
+        <li>reading</li>
+        <li>socializing</li>
+      </ul>
+    </div>
+    <div class="education-title">
+      <h2 class="section-title">EDUCATION</h2>
+      <div>
+        <p class="education-history-title">University of Leicester / BA Combined Arts - 2:1</p>
+        <p class="education-history-description">English, Psychology with Computer Science</p>
+        <p class="education-history-duration">Oct 2005 - Jun 2008, Leicester, UK</p>
+      </div>
+    </div>
+  </div>
+</div>

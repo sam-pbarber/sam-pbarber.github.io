@@ -1,0 +1,407 @@
+  h1, h2, h3 {
+    color: #000000;
+  }
+  
+  .contact-info ul {
+    list-style-type: none;
+  }
+  
+  .employment-history ul {
+    padding-left: 40px;
+  } 
+  
+  
+  .employment-history li {
+    font-size: 13px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allows items to wrap on small screens */
+    gap: 10px;
+  }
+  
+  .header .name-title {
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-align: right;
+    flex: 1;
+  }
+  
+  .profile-text {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .header .name-title h1 {
+    font-size: 60px;
+    margin-right: 20px;
+    font-family: 'Big Shoulders Display', sans-serif;
+  }
+  
+  .header .name-title p {
+    font-size: 30px;
+    margin-right: 20px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: #4CAF50;
+  }
+  
+  .header .contact-info {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .header .contact-info ul {
+    padding-left: 0;
+  }
+  
+  .header .contact-info ul li {
+    margin-bottom: 5px;
+  }
+  
+  .header .contact-info a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .header .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Grid Container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 equal-width columns */
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .grid-container .education-title {
+    text-align: left;
+  }
+  
+  .grid-container .personal-info {
+    text-align: left;
+  }
+  
+  /* Responsive Styles for smaller screens */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Stack in a single column */
+    }
+  }
+  
+  
+  
+  /* Skills Section */
+  .resume-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* .skills ul li {
+    margin-bottom: 10px;
+  } */
+  
+  label {
+    text-align: left;
+    width: 150px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  /* Experience Section */
+  .experience {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job {
+    margin-bottom: 20px;
+  }
+  
+  .job h3 {
+    font-size: 1.5em;
+  }
+  
+  .job p {
+    font-size: 1.1em;
+  }
+  
+  .job ul {
+    margin-left: 20px;
+  }
+  
+  .job ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Education Section */
+  .education {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .degree h3 {
+    font-size: 1.5em;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .section-title {
+    position: relative;
+    text-align: left;
+    padding-left: 5px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    margin: 2px 0; /* Add space above and below the section title */
+    letter-spacing: 3px;
+    font-size: 2em;
+  }
+  
+  .section-title h2 {
+    color: #333;
+    /*text-align: left;*/
+    margin: 0; /* Remove default margin */
+    padding: 0 10px; /* Add padding for spacing */
+  }
+  
+  /* The line (divider) below the title */
+  .section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px; /* Adjust the distance between the title and the line */
+    width: 100%;
+    height: 1.5px; /* Line thickness */
+    background-color: #739646; /* Line color */
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow properties */
+  }
+  
+  /* Apply styles to the <ul> with the .tag-list class */
+  .tag-list {
+    list-style: none; /* Remove default list bullets */
+    padding: 0; /* Remove padding */
+    /* padding-top: 10px; */
+    /* width: 50px; */
+    margin: 0; /* Remove margin */
+    display: flex; /* Align the items in a row */
+    flex-wrap: wrap; /* Allow wrapping if items overflow */
+  }
+  
+  /* Apply styles to all <li> inside .tag-list */
+  .tag-list li {
+    background-color: #eff1ec; /* Tag background color */
+    color: black; /* Text color */
+    padding: 4px 8px; /* Padding inside the tag */
+    border-color: #739646;
+    border-width: 1px;
+    border-style: groove;
+    margin: 3px 2px; /* Space between tags */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 10px; /* Font size */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Add a pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  /* Hover effect for tags */
+  .tag-list li:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  
+  /* New Tags */
+  
+  .tags-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each group */
+  }
+  
+  .tag-group {
+    display: flex;
+    gap: 5px; /* Space between label and tags */
+    padding-top: 15px; 
+  }
+  
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between tags */
+  }
+  
+  .tag {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  
+  /* Base styles */
+  .responsive-container {
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+    align-items: flex-start;  /* Align items at the top */
+  }
+  
+  .item {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .item-title {
+    padding: 10px;
+    
+    text-align: left;
+  }
+  
+  .employment-history {
+    align-items: left;
+    text-align: left;
+    padding: 5px 15px;
+  }
+  
+  .employment-history-title {
+    font-weight: bold;
+  }
+  
+  .employment-history-duration {
+    font-size: 12px;
+    
+  }
+  
+  .employment-history-description {
+    padding: 10px 0px 10px 0px;
+    font-size: 13px;
+  }
+  
+  .employment-history-bullets {
+    padding: 0px 0px 25px 0px;
+  }
+  
+  .education-history-title {
+    font-weight: bold;
+  }
+  
+  .education-history-description {
+    font-size: 12px;
+  }
+  
+  .education-history-duration {
+    padding: 10px 0px 10px 0px;
+    font-size: 13px;
+  }
+  
+  .title {
+    font-weight: bold;
+    width: 150px;  /* Fixed width for the title */
+    flex-shrink: 0;  /* Prevent title column from shrinking */
+  }
+  
+  .content {
+    flex-grow: 1;  /* The content takes the remaining space */
+    word-wrap: break-word;  /* Allow text to wrap */
+  }
+  
+  /* For larger screens (e.g., screens wider than 768px) */
+  @media (min-width: 600px) {
+    .row {
+      flex-direction: row;
+    }
+  
+    .item.title {
+      width: 150px;
+    }
+  
+    .item.content {
+      flex-grow: 1;  /* Takes the remaining space in the row */
+    }
+  }
+  
+  /* For smaller screens (e.g., screens narrower than 768px) */
+  @media (max-width: 599px) {
+    .row {
+      flex-direction: column;
+    }
+  
+    .item {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .item.title {
+      margin-bottom: 5px; /* Space between title and content */
+    }
+  }
+  
+  
+  
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack the name/job title and contact info vertically */
+        align-items: flex-start; /* Align to the left */
+    }
+  
+    .header .name-title, .header .contact-info {
+        text-align: left; /* Align both sections to the left */
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  
+    .header .name-title h1 {
+        font-size: 2em;
+    }
+  
+    .header .name-title p {
+        font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header .name-title h1 {
+        font-size: 1.5em;
+    }
+  
+    .header .name-title p {
+        font-size: 0.9em;
+    }
+  
+    .header .contact-info ul li {
+        font-size: 0.9em;
+    }
+  }
+  
+  
+  
+  
